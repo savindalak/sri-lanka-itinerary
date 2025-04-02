@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sri Lanka 21-Night Itinerary</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <header>
@@ -26,32 +27,85 @@
     </header>
 
     <main>
+        <section id="map">
+            <h2>Trip Route Map</h2>
+            <div id="googleMap"></div>
+        </section>
+
         <section id="homagama">
             <h2>Homagama (10–12 April) – 3 Nights</h2>
             <p><strong>Stay:</strong> Local guesthouses in or around Homagama.</p>
-            <p><strong>Activities:</strong> Relax locally; visit the National Museum, Galle Face Green, and local markets.</p>
+            <p><strong>Activities:</strong> Visit the National Museum, Galle Face Green, and local markets.</p>
         </section>
 
         <section id="monaragala">
             <h2>Monaragala (13–15 April) – 3 Nights</h2>
             <p><strong>Travel:</strong> 190 km (~4 hours)</p>
-            <p><strong>Stay:</strong> Monaragala Rest House or similar.</p>
+            <p><strong>Stay:</strong> Monaragala Rest House.</p>
             <p><strong>Activities:</strong> Visit Buduruwagala rock carvings and waterfalls.</p>
         </section>
 
-        <!-- Repeat for other locations -->
-        
+        <section id="kandy">
+            <h2>Kandy (16–17 April) – 2 Nights</h2>
+            <p><strong>Travel:</strong> 150 km (~3.5 hours)</p>
+            <p><strong>Stay:</strong> Cinnamon Citadel Kandy.</p>
+            <p><strong>Activities:</strong> Explore the Temple of the Tooth, Kandy Lake, and the Botanical Gardens.</p>
+        </section>
+
+        <section id="habarana">
+            <h2>Habarana (18–19 April) – 2 Nights</h2>
+            <p><strong>Travel:</strong> 95 km (~2.5 hours)</p>
+            <p><strong>Stay:</strong> Habarana Village by Cinnamon.</p>
+            <p><strong>Activities:</strong> Visit Sigiriya Rock Fortress & Minneriya National Park.</p>
+        </section>
+
+        <section id="anuradhapura">
+            <h2>Anuradhapura (20–21 April) – 2 Nights</h2>
+            <p><strong>Travel:</strong> 60 km (~1.5 hours)</p>
+            <p><strong>Stay:</strong> Heritage Hotel Anuradhapura.</p>
+            <p><strong>Activities:</strong> Visit Sri Maha Bodhi, Ruwanwelisaya, and Isurumuniya Temple.</p>
+        </section>
+
+        <section id="dambulla">
+            <h2>Dambulla (22 April) – 1 Night</h2>
+            <p><strong>Travel:</strong> 65 km (~1.5 hours)</p>
+            <p><strong>Stay:</strong> Amaya Lake Dambulla.</p>
+            <p><strong>Activities:</strong> Explore Dambulla Cave Temple & Golden Temple.</p>
+        </section>
+
+        <section id="pinnawala">
+            <h2>Pinnawala (23 April) – 1 Night</h2>
+            <p><strong>Travel:</strong> 90 km (~2.5 hours)</p>
+            <p><strong>Stay:</strong> Hotel Elephant Park Pinnawala.</p>
+            <p><strong>Activities:</strong> Visit Pinnawala Elephant Orphanage.</p>
+        </section>
+
+        <section id="nuwaraeliya">
+            <h2>Nuwara Eliya (24–25 April) – 2 Nights</h2>
+            <p><strong>Travel:</strong> 120 km (~3.5 hours)</p>
+            <p><strong>Stay:</strong> Araliya Red Hotel.</p>
+            <p><strong>Activities:</strong> Visit tea plantations, Gregory Lake, and Victoria Park.</p>
+        </section>
+
+        <section id="ella">
+            <h2>Ella (26 April) – 1 Night</h2>
+            <p><strong>Travel:</strong> 55 km (~1.5 hours)</p>
+            <p><strong>Stay:</strong> Awesome Place Ella.</p>
+            <p><strong>Activities:</strong> Visit Nine Arches Bridge & hike Little Adam’s Peak.</p>
+        </section>
+
         <section id="colombo">
             <h2>Colombo (28–30 April) – 3 Nights</h2>
             <p><strong>Travel:</strong> 230 km (~5 hours)</p>
-            <p><strong>Stay:</strong> Cinnamon Grand Colombo</p>
-            <p><strong>Activities:</strong> National Museum, Galle Face Green, local markets.</p>
+            <p><strong>Stay:</strong> Cinnamon Grand Colombo.</p>
+            <p><strong>Activities:</strong> Explore the National Museum & Galle Face Green.</p>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2025 Sri Lanka Itinerary by Savinda</p>
     </footer>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap" async defer></script>
 </body>
 </html>
-
